@@ -1,5 +1,4 @@
-## Welcome to GitHub Pages
- # JSNAMR
+# JSNAMR
  
  ### Gravity
  <!DOCTYPE html>
@@ -15,6 +14,8 @@
         <h1 class="box2d">JASONtek</h1> 
     </body>
 </html>
+
+## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/jsnamr/Github-Pages/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 

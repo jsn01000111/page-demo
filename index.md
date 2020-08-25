@@ -1,7 +1,7 @@
 # JSNAMR
  
  ### Gravity
- <!DOCTYPE html>
+ 
 <html>
 
     <head>

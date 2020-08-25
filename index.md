@@ -1,18 +1,4 @@
 # JSNAMR
- 
- ### Gravity
- 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">        
-        <script type="text/javascript" src="https://github.com/jsnamr/Github-Pages/blob/gh-pages/box2d.js"></script>
-        <script type="text/javascript" src="https://github.com/jsnamr/Github-Pages/blob/gh-pages/gravity.js"></script>
-    </head>
-    <body>
-        <h1 class="box2d">JASONtek</h1> 
-    </body>
-</html>
 
 ## Welcome to GitHub Pages
 

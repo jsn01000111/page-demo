@@ -1,4 +1,4 @@
-# JSNAMR
+# jsnamr
 
 ## Welcome to GitHub Pages
 

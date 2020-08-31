@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://benahm.github.io/jquery.throwable/javascripts/jquery.throwable.js"></script>
+        
+       <style>
+           body{
+	overflow: hidden;
+	font-family: 'Impact', sans serif;
+	background: url("http://www.designbolts.com/wp-content/uploads/2012/12/White-Linen-Seamless-Pattern-For-Website-Backgrounds.jpg");
+}
+	
+	input[type=range]::-webkit-slider-thumb{
+	  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 50%;;
+  margin: 5.7px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 50%;;
+  height: 8.6px;
+  cursor: pointer;
+  box-shadow: 0px 0px 1.8px #000000, 0px 0px 0px #0d0d0d;
+  background: #484d4d;
+  border-radius: 9.2px;
+  border: 0px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 1px #670000, 0px 0px 0px #810000;
+  border: 0px solid #dc6100;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  background: #3881f7;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5.7px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #484d4d;
+}
+input[type=range]::-moz-range-track {
+  width: 50%;;
+  height: 8.6px;
+  cursor: pointer;
+  box-shadow: 0px 0px 1.8px #000000, 0px 0px 0px #0d0d0d;
+  background: #484d4d;
+  border-radius: 9.2px;
+  border: 0px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 1px #670000, 0px 0px 0px #810000;
+  border: 0px solid #dc6100;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  background: #3881f7;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 50%;;
+  height: 8.6px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #484d4d;
+  border: 0px solid #010101;
+  border-radius: 18.4px;
+  box-shadow: 0px 0px 1.8px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: #484d4d;
+  border: 0px solid #010101;
+  border-radius: 18.4px;
+  box-shadow: 0px 0px 1.8px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 1px #670000, 0px 0px 0px #810000;
+  border: 0px solid #dc6100;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  background: #3881f7;
+  cursor: pointer;
+  height: 8.6px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #484d4d;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #484d4d;
+}
+#me{
+display: inline-block;
+position:fixed;
+margin:0;
+font-weight:500;
+font-size:20px;
+color: gray;
+font-family: 'Nova Round';
+}
+.c-box{
+width:250px;
+float:right;
+border: solid 5px #606c7f;
+border-radius: 5%;
+}
+.btn{
+text-align:center;
+font-size: 25px;
+background: #606c7f;
+color: #fff;
+}
+.main-c{
+	display: none;
+}
+.start-g, .stop-g{
+margin-top:10px;
+margin-left:4px;
+margin-right:4px;
+display: inline-block;
+}
+#gravity-y{
+transform: rotateZ(90deg);
+float:right;
+}
+.input-area{
+margin-top:70px;
+}
+.reset, .close, .stop-g, .start-g{
+width:90px;
+padding-bottom:5px;
+padding-top:5px;
+text-transform: uppercase;
+text-align: center;
+font-weight:600;
+border: solid 3px #606c7f;;
+cursor: pointer;
+border-radius: 5px;
+transition: all .3s;
+}
+.close:hover, .stop-g:hover, .start-g:hover{
+transition: all .5s;
+border-radius: 12px;
+background:#606c7f;;
+color: #fff;
+}
+
+
+#demo{
+	margin-top:10%; 
+}
+
+#demo input{
+	padding: 0px;
+width: 300px;
+height: 30px;
+font-size: 20px;
+transition: all 1s;
+outline: none;
+text-align: center;
+	background: transparent;
+border: solid 3px;
+border-color: transparent transparent brown;
+}
+#demo input:focus{
+width: 400px;
+transition: all 1s;	
+border-color: gray;
+}
+#wbox span{
+	font-size: 85px;
+}
+.test{
+	font-size: 85px;
+}
+
+@media only screen and (max-width: 600px){
+#me{
+	display: block;
+	text-align: center;
+	width: 100%;
+	font-size: 18px;
+}
+.c-box{
+	display: none;
+}
+
+#wbox span{
+	font-size: 42px;
+}
+.test{
+	font-size: 42px;
+}
+
+#demo input:focus{
+	width:300px;
+}
+}
+        </style>
+    </head>
+    <body>
+        <div class="main-c" >
+<div align="center"><div class="start-g">Start Gravity</div><div class="stop-g">zero gravity</div></div>
+	
+<div class="input-area">
+<input type="range"  min="-3" max="3" step=".2" value="0" id="gravity-x" ></input>
+<input type="range"  min="-3" max="3" step=".2" value="1" id="gravity-y" ></input>
+</div>
+<br><br><br>
+<div align="center"><div class="close" >Close</div></div><br>
+</div>
+</div>
+
+<br><br>
+<div id="demo" align="center">
+<p align="center" id="wbox">
+<span v-for="a in message" 
+:style="{color: getColor()}" >{{a}}</span><span style="color: #2fa3db;">AMR</span>
+</p>
+<br>
+<div align="center" class="g-btn">
+<button class="start-g" type="submit" id="grav" >GRAVITY</button>
+
+
+</div>
+</div>        
+    </body>
+<script>
+	var demo = new Vue({
+    el: '#demo',
+    data: {
+      message: 'JSN',
+      Color: '#2d2d2d'
+    },
+    methods: {
+      getColor: function () {
+      console.log('sadasd')
+         var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+    }
+    return color;
+      }
+    }
+})
+
+
+$(document).ready(function() {
+
+	var gr_x = document.getElementById("gravity-x").value;
+  	var gr_y = document.getElementById("gravity-y").value;
+
+	$(".start-g").click(function(){
+		$("span").addClass("test");
+		$(".test").throwable({
+						drag:true,
+                        gravity:{x:gr_x,y:gr_y},
+                        impulse:{
+                            f:152,
+                            p:{x:0,y:1.5}
+                        },
+                        shape:"circle",
+                        autostart:false,
+                        bounce:20,
+                        damping:13,
+                        
+		});
+
+	});
+
+	$(".stop-g").click(function(){
+		$(".test").throwable({
+			gravity:{x:0,y:0},
+		});
+	});
+
+	$("#gravity-x, #gravity-y").click(function(){
+		var gr_x = document.getElementById("gravity-x").value;
+  	var gr_y = document.getElementById("gravity-y").value;
+		$(".test").throwable({
+			gravity:{x:gr_x,y:gr_y},
+		});
+
+	});
+});
+
+$(document).ready(function(){
+$(".btn").click(function(){$(".main-c").slideToggle("slow");});
+$(".close").click(function(){$(".main-c").slideUp();});
+
+});
+</script>
+</html>

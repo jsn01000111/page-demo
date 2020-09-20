@@ -1,0 +1,39 @@
+body {
+  background-color: #F1F1F1;
+  display: block;
+  margin: 0;
+}
+
+h1 {
+	color: #1b262c;
+}
+
+h2 {
+  font-size: 16px;
+  font-family: Noto Sans, sans-serif;
+  font-weight: normal;
+  margin-top: -16px;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: grey;
+  border-width: 5px;
+  width: 5%;
+}
+
+.nav-container {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.jsnamr:hover {
+	padding: 25px;
+  transform: scale(1.1);
+}
+
+#heading {
+	font-size: 35px;
+	font-family: Noto Sans, sans-serif;
+}

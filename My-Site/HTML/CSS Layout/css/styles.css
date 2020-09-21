@@ -31,14 +31,13 @@ hr {
 .top-container {
   background-color: #f4fafe;
   padding-top: 100px;
-  padding-left: 20px;
   margin-top: -20px;
   text-align: center;
 }
 
 .bottom-cloud {
 	position: absolute;
-	left: 500px;
+	right: 60%;
 	top: 520px
 }
 

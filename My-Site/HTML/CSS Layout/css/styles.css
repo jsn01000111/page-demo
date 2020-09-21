@@ -1,0 +1,67 @@
+body {
+  background-color: #F1F1F1;
+  display: block;
+  margin: 0;
+}
+
+h1 {
+	color: #1b262c;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: -16px;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: grey;
+  border-width: 5px;
+  width: 5%;
+}
+
+.nav-container {
+  background-color: #f4fafe;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.top-container {
+  background-color: #f4fafe;
+  padding-top: 100px;
+  padding-left: 20px;
+  margin-top: -20px;
+  text-align: center;
+}
+
+.bottom-cloud {
+	position: absolute;
+	left: 500px;
+	top: 520px
+}
+
+.top-cloud {
+	position: absolute;
+	right: 500px;
+	top: 310px;
+}
+
+.Iam {
+  font-size: 20px;
+}
+
+.jsnamr {
+	width: 200px;
+}
+
+.jsnamr:hover {
+	padding: 25px;
+  transform: scale(1.1);
+}
+
+#heading {
+	font-size: 35px;
+	font-family: Noto Sans, sans-serif;
+}

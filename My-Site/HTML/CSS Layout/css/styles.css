@@ -1,17 +1,10 @@
 body {
   background-color: #F1F1F1;
-  display: block;
   margin: 0;
 }
 
 h1 {
-	color: #1b262c;
-}
-
-h2 {
-  font-size: 16px;
-  font-weight: normal;
-  margin-top: -16px;
+  color: #1b262c;
 }
 
 hr {
@@ -22,10 +15,20 @@ hr {
   width: 5%;
 }
 
+table {
+  text-align: justify;
+}
+
 .nav-container {
   background-color: #f4fafe;
   padding-top: 20px;
   padding-left: 20px;
+  margin-top: -16px;
+}
+
+.nav {
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .top-container {
@@ -35,16 +38,36 @@ hr {
   text-align: center;
 }
 
+.middle-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.bottom-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.bottom-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
 .bottom-cloud {
-	position: absolute;
-	right: 60%;
-	top: 520px
+  position: absolute;
+  right: 60%;
+  top: 110px
 }
 
 .top-cloud {
-	position: absolute;
-	right: 500px;
-	top: 310px;
+  position: absolute;
+  right: 500px;
+  top: 250px;
 }
 
 .Iam {
@@ -52,15 +75,15 @@ hr {
 }
 
 .jsnamr {
-	width: 200px;
+  width: 200px;
 }
 
 .jsnamr:hover {
-	padding: 25px;
+  padding: 25px;
   transform: scale(1.1);
 }
 
 #heading {
-	font-size: 35px;
-	font-family: Noto Sans, sans-serif;
+  font-size: 35px;
+  font-family: Noto Sans, sans-serif;
 }

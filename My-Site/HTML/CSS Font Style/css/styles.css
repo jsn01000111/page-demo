@@ -81,8 +81,12 @@ table {
   top: 250px;
 }
 
+.mountain {
+  width: 60%;
+}
+
 .jsnamr {
-  width: 150px;
+  width: 200px;
 }
 
 .jsnamr:hover {

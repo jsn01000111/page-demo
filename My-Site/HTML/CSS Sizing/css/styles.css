@@ -9,7 +9,7 @@ h1 {
   font-size: 5.5rem;
   line-height: 2;
   margin: 50px auto 0 auto;
-  font-family: 'Marck Script', cursive;
+  font-family: 'Caveat', cursive;
 }
 
 h2 {
@@ -52,14 +52,15 @@ table {
   text-align: justify;
 }
 
-.nav-container {
+.anchor-nav {
   background-color: #eff6f5;
+  float: right;
   padding-top: 20px;
   padding-left: 20px;
   margin-top: -16px;
 }
 
-.nav {
+.anchor {
   font-size: 16px;
   font-weight: normal;
 }
@@ -91,6 +92,12 @@ table {
   width: 60vw;
 }
 
+.middle-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+
 .jsnamr {
   width: 200px;
 }
@@ -102,11 +109,6 @@ table {
 
 .intro {
   margin: auto;
-}
-
-.middle-container {
-  margin-top: 30px;
-  text-align: center;
 }
 
 .project {

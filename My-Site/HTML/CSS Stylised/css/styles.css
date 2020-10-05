@@ -81,6 +81,15 @@ table {
   display: none;
 }
 
+@media (max-width: 600px) {
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+}
+
 .nav > .nav-links {
   display: inline;
   float: right;
@@ -111,13 +120,6 @@ table {
     top: 0px;
   }
   
-@media (max-width: 600px)
-  .nav > .nav-links > a {
-    display: block;
-    width: 100%;
-    padding: 20px;
-    margin-top: 20px;
-}
   .nav > .nav-btn > label {
     display: inline-block;
     width: 50px;

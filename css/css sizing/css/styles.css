@@ -1,0 +1,167 @@
+body {
+  background-color: #faf9f9;
+  margin: 0;
+  font-family: 'Roboto Slab', Roboto, sans-serif;
+}
+
+h1 {
+  color: #488b8f;
+  font-size: 5.5rem;
+  line-height: 2;
+  margin: 50px auto 0 auto;
+  font-family: 'Caveat', cursive;
+}
+
+h2 {
+  color: #5ea3a3;
+  font-size: 2.5rem;
+  font-weight: normal;
+  font-family: 'Roboto Mono', monospace;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #6eacac;
+  font-size: 1.5rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+p {
+  line-height: 2;
+}
+
+a {
+	color:#add2c9;
+	text-decoration:none;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: lightgray;
+  border-width: 5px;
+  width: 5%;
+  margin: 100px auto;
+}
+
+table {
+  text-align: justify;
+}
+
+.anchor-nav {
+  background-color: #eff6f5;
+  float: right;
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-top: -16px;
+}
+
+.anchor {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.top-container {
+  background-color: #eff6f5;
+  padding-top: 100px;
+  margin-top: -20px;
+  text-align: center;
+}
+
+.coding {
+  text-decoration: underline;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 500px;
+  top: 250px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  right: 60%;
+  top: 110px
+}
+
+.mountain {
+  width: 60vw;
+}
+
+.middle-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+
+.jsnamr {
+  width: 200px;
+}
+
+.jsnamr:hover {
+  padding: 25px;
+  transform: scale(1.1);
+}
+
+.intro {
+  margin: auto;
+}
+
+.project {
+  width: auto;
+  text-align: center;
+}
+
+.fa-code {
+  font-size: 5vw;
+  width: 50%;
+  float: left;
+  margin-right: 100px;
+}
+
+.code-description {
+  clear: left;
+}
+
+.fa-android {
+  font-size: 5vw;
+  width: 50%;
+  float: left;
+  margin-right: 100px;
+}
+
+.android-description {
+  clear: left;
+}
+
+.fa-gamepad {
+  font-size: 5vw;
+  width: 50%;
+  float: left;
+  margin-right: 100px;
+}
+
+.gamecode-description {
+  clear: left;
+}
+
+.skills {
+margin-top: 20px;
+text-align: center;
+}
+
+.contact {
+  margin-top: 20px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+
+.bottom-container {
+  margin-top: 40px;
+  text-align: center;
+}

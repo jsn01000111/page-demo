@@ -1,0 +1,316 @@
+body {
+  background-color: #fff;
+  margin: 0;
+  font-family: 'Roboto Slab', Roboto, sans-serif;
+}
+
+h1 {
+  color: #fff;
+  font-size: 5.5rem;
+  line-height: 2;
+  margin: 50px auto 0 auto;
+  font-family: 'Caveat', cursive;
+}
+
+h2 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  font-weight: normal;
+  font-family: 'Roboto Mono', monospace;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #000;
+  font-size: 1.5rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+p {
+  line-height: 2;
+}
+
+a {
+	color:#597ea2;
+	text-decoration:none;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: lightgray;
+  border-width: 5px;
+  width: 5%;
+  margin: 100px auto;
+}
+
+table {
+  text-align: justify;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #b4c9da;
+  position: relative;
+  padding-top: 20px;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 5px 10px 10px 10px;
+  margin-left: 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: #b4c9da;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #fff;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #b4c9da;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+.top-container {
+  background-color: #b4c9da;
+  padding-top: 100px;
+  margin-top: -20px;
+  text-align: center;
+}
+
+.ilove {
+  font-size: 2rem;
+  font-family: 'Caveat', cursive;
+  color: #fff;
+}
+
+.coding {
+  text-decoration: underline;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 500px;
+  top: 250px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  right: 60%;
+  top: 110px
+}
+
+@media screen and (max-width:450px) {
+  .bottom-cloud {
+    visibility: hidden;
+ }
+}
+
+.mountain {
+  width: 60vw;
+}
+
+.jsnamr {
+  width: 200px;
+}
+
+.jsnamr:hover {
+  padding: 25px;
+  transform: scale(1.1);
+}
+
+.intro {
+  margin: auto;
+}
+
+.middle-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.project {
+  width: auto;
+  text-align: center;
+}
+
+.fa-code {
+  font-size: 5vw;
+  width: 50%;
+  float: left;
+  margin-right: 100px;
+}
+
+.code-description {
+  clear: left;
+}
+
+.fa-android {
+  font-size: 5vw;
+  width: 50%;
+  float: left;
+  margin-right: 100px;
+}
+
+.android-description {
+  clear: left;
+}
+
+.fa-gamepad {
+  font-size: 5vw;
+  width: 50%;
+  float: left;
+  margin-right: 100px;
+}
+
+.gamecode-description {
+  clear: left;
+}
+
+.skills {
+margin-top: 20px;
+text-align: center;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.coding-gif {
+  width: 8vw;
+  float: right;
+  margin-left: 30px;
+}
+
+.android-gif {
+  width: 8vw;
+  float: left;
+  margin-right: 30px;
+}
+
+.contact {
+  margin-top: 20px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.responsive-map{
+overflow: hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+margin-bottom: -43%;
+}
+.responsive-map iframe{
+filter: grayscale(50%);
+left:0;
+top:0;
+height:30%;
+width:100%;
+position:absolute;
+}
+
+
+.bottom-container {
+  color: #f2f2f2;
+  background-color: #2c3e50;
+  line-height: 3;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.bottom-container a{
+  color: #f2f2f2;
+  align-content: space-between;
+  margin: 10px 20px;
+}

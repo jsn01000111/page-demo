@@ -1,0 +1,96 @@
+/* Font Style */
+body {
+  background-color: #F1F1F1;
+  margin: 0;
+  font-family: 'Roboto Slab', Roboto, sans-serif;
+}
+
+h1 {
+  color: #1b262c;
+  font-size: 3em;
+  font-family: 'Caveat', cursive;
+}
+
+h2 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+h3 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: lightgrey;
+  border-width: 5px;
+  width: 5%;
+}
+
+table {
+  text-align: justify;
+}
+
+.anchor-nav {
+  background-color: #f4fafe;
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-top: -16px;
+}
+
+.anchor {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.top-container {
+  background-color: #f4fafe;
+  padding-top: 100px;
+  margin-top: -20px;
+  text-align: center;
+}
+
+.bottom-cloud {
+  position: absolute;
+  right: 60%;
+  top: 110px
+}
+
+.top-cloud {
+  position: absolute;
+  right: 500px;
+  top: 250px;
+}
+
+.mountain {
+  width: 60%;
+}
+
+.middle-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.jsnamr {
+  width: 200px;
+}
+
+.jsnamr:hover {
+  padding: 25px;
+  transform: scale(1.1);
+}
+
+.bottom-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.bottom-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer {
+  margin-top: 40px;
+  text-align: center;
+}

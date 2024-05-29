@@ -1,4 +1,5 @@
 # The Complete  Web Development Bootcamp
+  https://www.udemy.com/course/the-complete-web-development-bootcamp
 
 Become a full-stack web developer with just one course. HTML, CSS, Javascript, Node, React, MongoDB and more!
 
@@ -27,5 +28,22 @@ Become a full-stack web developer with just one course. HTML, CSS, Javascript, N
   * Hyperlinks and the Wikigame
   * MDN Table documentation
   * MDN Input documentation
-  * Publish website Github Pages   
+  * Publish website Github Pages
+ 
+* CSS
+  * CSS Cheatsheet
+  * Toasty Technology’s classic 90s style website
+  * MDN documentation on background colour
+  * Curated colour palettes colorhunt.co
+  * Table of named colours MDN
+  * Overview default CSS applied by the browser
+  * MDN documentation on border-styles
+  * devdocs.io on CSS height
+  * W3Schools documentation on CSS Text
+  * Is <img> element block level or inline level?
+  * W3Schools documentation on Web Safe Fonts
+  * MDN documentation reference on CSS Properties
+  * Emoji characters emojipedia.org
+  * Z-Index Documentation on MDN
+  
 

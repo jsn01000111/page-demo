@@ -5,10 +5,10 @@ Become a full-stack web developer with just one course. HTML, CSS, Javascript, N
 ### Web Development Resources List
 
 * Front-End Web Development
- * Submarine Cable Map
- * Google Chrome Browser (recommended)
- * Atom Text Editor (recommended)
- * List of Atom Plugins
- * VS Code Text Editor (good alternative)
- * VS Code Extensions
+  * Submarine Cable Map
+  * Google Chrome Browser (recommended)
+  * Atom Text Editor (recommended)
+  * List of Atom Plugins
+  * VS Code Text Editor (good alternative)
+  * VS Code Extensions
 
